@@ -1,6 +1,13 @@
 (function () {
   "use strict";
 
+  function normalizeHomepageUrl() {
+    const { pathname, search, hash, origin } = window.location;
+    if (!pathname.endsWith("/index.html")) return;
+    const cleanPath = pathname.replace(/\/index\.html$/, "/");
+    window.location.replace(`${origin}${cleanPath}${search}${hash}`);
+  }
+
   function onReady(fn) {
     if (document.readyState === "loading") {
       document.addEventListener("DOMContentLoaded", fn, { once: true });
@@ -279,6 +286,7 @@
   }
 
   onReady(() => {
+    normalizeHomepageUrl();
     initThemeToggle();
     initScrollAnimations();
     initTabs();
