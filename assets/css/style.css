@@ -905,6 +905,8 @@ body {
   z-index: 1;
   overflow: visible;
   isolation: isolate;
+  content-visibility: visible !important;
+  contain-intrinsic-size: auto !important;
 }
 
 #products-overview .bg-overlay {
@@ -1227,12 +1229,8 @@ body {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.2s ease;
-  }
-
-  #products-overview.is-in-view .tab-arrows {
-    opacity: 1;
+    opacity: 1 !important;
+    transition: none;
   }
 }
 /* --- Unified Service Card and Card Image Styles --- */
