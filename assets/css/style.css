@@ -782,8 +782,8 @@ body {
 .footer__brand-logo {
   display: block;
   width: auto;
-  max-width: 170px;
-  max-height: 42px;
+  max-width: 102px;
+  max-height: 25px;
   margin: 0 0 0.55rem;
 }
 
@@ -3691,7 +3691,7 @@ main > section,
 @media (max-width: 640px) {
   #navbar__logo img {
     margin-left: -0.2rem !important;
-    max-height: 34px !important;
-    max-width: 148px !important;
+    max-height: 27px !important;
+    max-width: 118px !important;
   }
 }
