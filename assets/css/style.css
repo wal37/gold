@@ -1008,8 +1008,9 @@ body {
 }
 
 .tab-arrows {
-  position: fixed;
-  top: 50%;
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   height: 0;
@@ -1017,11 +1018,6 @@ body {
   overflow: visible;
   z-index: 2147483000;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-#products-overview.is-in-view .tab-arrows {
   opacity: 1;
 }
 
@@ -1200,7 +1196,7 @@ body {
 
 @media (max-width: 640px) {
   .tab-arrows {
-    top: 50%;
+    top: 50vh;
     z-index: 2147483000;
     height: 0;
     margin-bottom: 0;
