@@ -217,6 +217,21 @@
 
       section.addEventListener("click", delegatedArrowNav, true);
 
+      // Mobile visibility toggle for fixed arrows within Products Overview.
+      if ("IntersectionObserver" in window) {
+        const sectionObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              section.classList.toggle("is-in-view", entry.isIntersecting && entry.intersectionRatio > 0.08);
+            });
+          },
+          { threshold: [0, 0.08, 0.2, 0.5] }
+        );
+        sectionObserver.observe(section);
+      } else {
+        section.classList.add("is-in-view");
+      }
+
       // Mobile swipe between tabs (left/right) without relying on arrows.
       let touchStartX = 0;
       let touchStartY = 0;
