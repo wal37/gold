@@ -222,10 +222,10 @@
         const sectionObserver = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              section.classList.toggle("is-in-view", entry.isIntersecting && entry.intersectionRatio > 0.08);
+              section.classList.toggle("is-in-view", entry.isIntersecting);
             });
           },
-          { threshold: [0, 0.08, 0.2, 0.5] }
+          { threshold: 0 }
         );
         sectionObserver.observe(section);
       } else {
