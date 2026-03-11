@@ -218,19 +218,16 @@
       section.addEventListener("click", delegatedArrowNav, true);
 
       // Mobile visibility toggle for fixed arrows within Products Overview.
-      if ("IntersectionObserver" in window) {
-        const sectionObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              section.classList.toggle("is-in-view", entry.isIntersecting);
-            });
-          },
-          { threshold: 0 }
-        );
-        sectionObserver.observe(section);
-      } else {
-        section.classList.add("is-in-view");
-      }
+      const updateArrowVisibility = () => {
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+        const inView = rect.top < vh * 0.92 && rect.bottom > vh * 0.08;
+        section.classList.toggle("is-in-view", inView);
+      };
+
+      updateArrowVisibility();
+      window.addEventListener("scroll", updateArrowVisibility, { passive: true });
+      window.addEventListener("resize", updateArrowVisibility, { passive: true });
 
       // Mobile swipe between tabs (left/right) without relying on arrows.
       let touchStartX = 0;

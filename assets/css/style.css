@@ -3693,5 +3693,7 @@ main > section,
 @media (max-width: 640px) {
   #navbar__logo img {
     margin-left: -0.2rem !important;
+    max-height: 34px !important;
+    max-width: 148px !important;
   }
 }
