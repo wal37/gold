@@ -3695,3 +3695,23 @@ main > section,
     max-width: 118px !important;
   }
 }
+
+/* Mobile hero: image first, content below */
+@media (max-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__image {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0.8rem;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+}
