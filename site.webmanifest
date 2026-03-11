@@ -1,0 +1,20 @@
+{
+  "name": "Goldits GIS Platform",
+  "short_name": "Goldits",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "/gologo.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/gologo.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

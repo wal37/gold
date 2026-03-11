@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" type="image/png" href="gos.png" />
+  <link rel="apple-touch-icon" href="gologo.webp" />
+  <link rel="manifest" href="site.webmanifest" />
+  <title>Goldits GIS System</title>
+  <meta name="description" content="Goldits is a high-performance GIS platform for real-time mapping, routing, search, analytics, and secure geospatial infrastructure." />
+  <meta name="keywords" content="global GIS platform, geospatial platform, map nigeria, nigeria map, map africa, africa map, nigeria mapping platform, africa mapping platform, postal code nigeria, nigeria postal code API, postal code africa, africa postal code data, geofencing nigeria, geofencing africa, gps tracking nigeria, tracking africa, fleet tracking nigeria, vehicle tracking africa, route optimization nigeria, routing API africa, geocoding nigeria, reverse geocoding africa, local search nigeria, place lookup africa, location intelligence nigeria, spatial analytics africa, address verification nigeria, address database africa, logistics mapping nigeria, navigation africa" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="geo.region" content="NG" />
+  <meta name="geo.placename" content="Nigeria" />
+  <link rel="canonical" href="https://goldits.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Goldits" />
+  <meta property="og:title" content="Goldits GIS System" />
+  <meta property="og:description" content="High-performance GIS platform for real-time mapping, routing, search, analytics, and secure geospatial infrastructure." />
+  <meta property="og:url" content="https://goldits.com/" />
+  <meta property="og:image" content="https://goldits.com/assets/img/maprend.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Goldits GIS System" />
+  <meta name="twitter:description" content="High-performance GIS platform for real-time mapping, routing, search, analytics, and secure geospatial infrastructure." />
+  <meta name="twitter:image" content="https://goldits.com/assets/img/maprend.webp" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Goldits",
+          "url": "https://goldits.com/",
+          "logo": "https://goldits.com/gologo.webp",
+          "areaServed": [
+            "Worldwide",
+            "Nigeria",
+            "Africa"
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Goldits GIS Platform",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, Android, iOS, Linux",
+          "url": "https://goldits.com/",
+          "description": "Global GIS platform for mapping, routing, search, geocoding, postal code intelligence, geofencing, and spatial analytics.",
+          "keywords": "map nigeria, nigeria map, map africa, postal code nigeria, postal code africa, geofencing nigeria, tracking nigeria, tracking africa, geocoding nigeria, routing africa",
+          "areaServed": [
+            "Worldwide",
+            "Nigeria",
+            "Africa"
+          ],
+          "provider": {
+            "@type": "Organization",
+            "name": "Goldits"
+          }
+        }
+      ]
+    }
+  </script>
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "light") {
+        document.documentElement.classList.add("light");
+      }
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Primary">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">
+        <img src="gologo.webp" alt="ALGO Logo" loading="eager" decoding="async" fetchpriority="high" />
+      </a>
+      <div class="navbar__toggle" id="mobile-menu" role="button" aria-label="Toggle menu" aria-controls="primary-menu" aria-expanded="false" tabindex="0">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu" id="primary-menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="#core-geospatial-services" class="navbar__links">Services</a></li>
+        <li class="navbar__item"><a href="#products-overview" class="navbar__links">Products</a></li>
+        <li class="navbar__item mobile-only"><a href="#research" class="navbar__links">Research</a></li>
+      </ul>
+      <a href="#research" class="navbar__research">Research</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero__content">
+      <h1>Geospatial Intelligence</h1>
+      <p>Independent. High-performance. Designed for real-time mapping, analytics, and secure routing at scale.</p>
+      <div class="hero__buttons">
+        <a href="#products-overview" class="btn btn-primary">Explore Product</a>
+        <a href="#core-geospatial-services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="./assets/img/masi.webp" alt="Geospatial Map Preview" loading="eager" decoding="async" fetchpriority="high" />
+    </div>
+  </header>
+
+  <div class="shared-services-bg">
+    <section id="our-capabilities" class="our-capabilities-exact">
+      <div class="our-capabilities-card our-capabilities-card--showcase">
+        <h2>Our Capabilities</h2>
+        <nav class="geo-showcase-nav" aria-label="Geospatial categories">
+          <a href="#products-overview" class="geo-showcase-item" style="--geo-bg: url('../img/maps.webp')">
+            <span class="geo-kicker">Product System</span>
+            <strong>Geospatial Product Stack</strong>
+            <span>Explore mapping APIs, datasets, and deployment-ready GIS modules.</span>
+          </a>
+          <a href="#core-geospatial-services" class="geo-showcase-item" style="--geo-bg: url('../img/comp.webp')">
+            <span class="geo-kicker">Technology</span>
+            <strong>Core Geospatial Engine</strong>
+            <span>Real-time rendering, search, routing, analytics, and spatial intelligence.</span>
+          </a>
+          <a href="#platform-ecosystem-services" class="geo-showcase-item" style="--geo-bg: url('../img/spatian.webp')">
+            <span class="geo-kicker">Industry Solutions</span>
+            <strong>Platform &amp; Ecosystem Services</strong>
+            <span>Offline edge, AI workflows, sovereignty controls, and sector use cases.</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section id="core-geospatial-services" class="our-capabilities-exact core-services-section">
+      <div class="our-capabilities-card">
+        <h2 class="section-title">Core Geospatial Services</h2>
+        <div class="core-group-panel">
+          <div class="core-group-list">
+            <div class="core-group">
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/maprend.webp">
+                <div class="core-header"><h3 id="h-rtm"><button type="button" class="topic-button">Real-Time Mapping &amp; Rendering</button></h3></div>
+                <div class="core-expansion" id="exp-rtm" role="region" aria-labelledby="h-rtm"><ul class="core-detail"><li><button type="button" class="subtopic-button">GPU-accelerated vector render engine</button></li><li><button type="button" class="subtopic-button">Offline tile rendering</button></li><li><button type="button" class="subtopic-button">Multi-scale zoom &amp; layer switching</button></li><li><button type="button" class="subtopic-button">Custom JSON style integration</button></li><li><button type="button" class="subtopic-button">Multi-language annotation support</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/searchhhh.webp">
+                <div class="core-header"><h3 id="h-search"><button type="button" class="topic-button">Local Search &amp; Place Lookup</button></h3></div>
+                <div class="core-expansion" id="exp-search" role="region" aria-labelledby="h-search"><ul class="core-detail"><li><button type="button" class="subtopic-button">Address search &amp; reverse geocoding</button></li><li><button type="button" class="subtopic-button">POI search with STRtree indexing</button></li><li><button type="button" class="subtopic-button">Geohash &amp; spatial tree optimization</button></li><li><button type="button" class="subtopic-button">Custom tag filtering</button></li><li><button type="button" class="subtopic-button">AI voice/text queries</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/test1.webp">
+                <div class="core-header"><h3 id="h-routing"><button type="button" class="topic-button">Routing &amp; Navigation</button></h3></div>
+                <div class="core-expansion" id="exp-routing" role="region" aria-labelledby="h-routing"><ul class="core-detail"><li><button type="button" class="subtopic-button">Offline turn-by-turn navigation</button></li><li><button type="button" class="subtopic-button">Multi-modal: drive, walk, cycle</button></li><li><button type="button" class="subtopic-button">Live traffic &amp; ETA calculation</button></li><li><button type="button" class="subtopic-button">Route optimization &amp; batch routing</button></li><li><button type="button" class="subtopic-button">Visual and audio guidance</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/Visualization.webp">
+                <div class="core-header"><h3 id="h-integration"><button type="button" class="topic-button">Topography, Remote Sensing &amp; Visualization</button></h3></div>
+                <div class="core-expansion" id="exp-integration" role="region" aria-labelledby="h-integration"><ul class="core-detail"><li><button type="button" class="subtopic-button">DEM, contour, slope, and elevation layers</button></li><li><button type="button" class="subtopic-button">Satellite and aerial imagery overlays</button></li><li><button type="button" class="subtopic-button">Multi-source raster/vector fusion</button></li><li><button type="button" class="subtopic-button">Time-based imagery comparison</button></li><li><button type="button" class="subtopic-button">Thematic map styling and layer blending</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/Analytics.webp">
+                <div class="core-header"><h3 id="h-analytics"><button type="button" class="topic-button">Spatial Analytics &amp; Decision Support</button></h3></div>
+                <div class="core-expansion" id="exp-analytics" role="region" aria-labelledby="h-analytics"><ul class="core-detail"><li><button type="button" class="subtopic-button">Heatmaps, clustering, and density analysis</button></li><li><button type="button" class="subtopic-button">Spatial data capture from field sensors &amp; IoT</button></li><li><button type="button" class="subtopic-button">Time-series &amp; animation tools</button></li><li><button type="button" class="subtopic-button">Scenario modeling</button></li><li><button type="button" class="subtopic-button">Exportable reports &amp; charts</button></li></ul></div>
+              </div>
+            </div>
+          </div>
+          <div class="core-group-preview"><img src="" alt="Core Geospatial Services preview" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform-ecosystem-services" class="our-capabilities-exact core-services-section">
+      <div class="our-capabilities-card">
+        <h2 class="section-title">Platform &amp; Ecosystem Services</h2>
+        <div class="core-group-panel">
+          <div class="core-group-list">
+            <div class="core-group">
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/Intelligence.webp">
+                <div class="core-header"><h3 id="h-offline"><button type="button" class="topic-button">Offline &amp; Edge Intelligence</button></h3></div>
+                <div class="core-expansion" id="exp-offline" role="region" aria-labelledby="h-offline"><ul class="core-detail"><li><button type="button" class="subtopic-button">Fully offline-capable</button></li><li><button type="button" class="subtopic-button">ARM/edge deployment</button></li><li><button type="button" class="subtopic-button">Custom low-footprint binary format</button></li><li><button type="button" class="subtopic-button">Preloading &amp; cache management</button></li><li><button type="button" class="subtopic-button">Local inference &amp; analytics</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/language.webp">
+                <div class="core-header"><h3 id="h-ai"><button type="button" class="topic-button">AI &amp; Natural Language Interaction</button></h3></div>
+                <div class="core-expansion" id="exp-ai" role="region" aria-labelledby="h-ai"><ul class="core-detail"><li><button type="button" class="subtopic-button">Conversational map queries</button></li><li><button type="button" class="subtopic-button">Voice-driven search &amp; navigation</button></li><li><button type="button" class="subtopic-button">Contextual suggestions</button></li><li><button type="button" class="subtopic-button">AI-powered place recognition</button></li><li><button type="button" class="subtopic-button">Customizable prompt logic</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/secure.webp">
+                <div class="core-header"><h3 id="h-security"><button type="button" class="topic-button">Security &amp; Sovereignty</button></h3></div>
+                <div class="core-expansion" id="exp-security" role="region" aria-labelledby="h-security"><ul class="core-detail"><li><button type="button" class="subtopic-button">On-premises &amp; air-gapped support</button></li><li><button type="button" class="subtopic-button">Custom encryption &amp; key management</button></li><li><button type="button" class="subtopic-button">Granular access control</button></li><li><button type="button" class="subtopic-button">Data residency options</button></li><li><button type="button" class="subtopic-button">Audit logging</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/developer.webp">
+                <div class="core-header"><h3 id="h-dev"><button type="button" class="topic-button">Developer &amp; Data Ecosystem</button></h3></div>
+                <div class="core-expansion" id="exp-dev" role="region" aria-labelledby="h-dev"><ul class="core-detail"><li><button type="button" class="subtopic-button">Asset &amp; fleet tracking platform with alerts and replay</button></li><li><button type="button" class="subtopic-button">Sensor fusion &amp; event stream processing (GPS + IoT + external feeds)</button></li><li><button type="button" class="subtopic-button">Monitoring &amp; geospatial operations center dashboards</button></li><li><button type="button" class="subtopic-button">SDKs for C++, Java, Python</button></li><li><button type="button" class="subtopic-button">Plugin, extension, and data import/export utilities</button></li></ul></div>
+              </div><hr />
+              <div class="core-line collapsible-line collapsed" data-image="assets/img/multi.webp">
+                <div class="core-header"><h3 id="h-usecases"><button type="button" class="topic-button">Multisector Use Cases</button></h3></div>
+                <div class="core-expansion" id="exp-usecases" role="region" aria-labelledby="h-usecases"><ul class="core-detail"><li><button type="button" class="subtopic-button">Logistics &amp; fleet management with live asset tracking</button></li><li><button type="button" class="subtopic-button">Emergency &amp; public safety with geofence entry/exit triggers</button></li><li><button type="button" class="subtopic-button">Urban planning &amp; infrastructure with sensor/telemetry ingestion</button></li><li><button type="button" class="subtopic-button">Telecom &amp; utilities with operational dashboards and replay views</button></li><li><button type="button" class="subtopic-button">Consumer navigation &amp; travel with dispatch and field visibility</button></li></ul></div>
+              </div>
+            </div>
+          </div>
+          <div class="core-group-preview"><img src="" alt="Platform &amp; Ecosystem Services preview" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="product-features navbg-section">
+    <div class="product-features__box">
+      <h2>Built for Speed &amp; Precision</h2>
+      <ul><li>Geohash and spatial tree indexing</li><li>Sub-second query resolution</li><li>64-bit precision coordinate storage</li><li>Smart metadata tagging with dictionary compression</li></ul>
+      <a href="#products-overview" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="product-features__box">
+      <h2>Interactive Visualization</h2>
+      <ul><li>Layer toggling, tooltips, and data inspection</li><li>3D-ready architecture for terrain and structures</li><li>Custom JSON styling support</li><li>Animation-ready for time-based data</li></ul>
+      <a href="#products-overview" class="btn btn-primary">View Demo</a>
+    </div>
+  </section>
+
+  <main id="main-content" role="main">
+    <section id="products-overview" class="services products-overview-section">
+      <div class="bg-overlay"></div>
+      <div class="services__header">
+        <h2>Products Overview</h2>
+        <p>Explore our GIS platform across five focused product categories for teams, developers, and end users.</p>
+      </div>
+
+      <div class="tab-buttons" aria-label="Products overview categories">
+        <button class="tab-btn active" data-target="#core-geospatial">Core Geospatial &amp; Mapping</button>
+        <button class="tab-btn" data-target="#routing-nav">Routing, Search &amp; Geocoding</button>
+        <button class="tab-btn" data-target="#ai-spatial">AI Spatial Intelligence</button>
+        <button class="tab-btn" data-target="#developer-api">Developer, API &amp; Infrastructure</button>
+        <button class="tab-btn" data-target="#consumer">Consumer &amp; Specialized Solutions</button>
+      </div>
+      <div class="tab-arrows" aria-label="Switch product category">
+        <button class="tab-nav-arrow tab-nav-arrow--left" type="button" aria-label="Previous category" data-dir="-1">&#10094;</button>
+        <button class="tab-nav-arrow tab-nav-arrow--right" type="button" aria-label="Next category" data-dir="1">&#10095;</button>
+      </div>
+
+      <div id="core-geospatial" class="tab-content active">
+        <div class="services__container">
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/maps.webp" alt="Unified Base Map, Tiles and Live Viewer"></div><div class="card-content"><h3>Unified Base Map, Tiles &amp; Live Viewer</h3><p>One integrated stack for national base maps, vector tiles, and real-time web/mobile map rendering.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="terrain.webp" alt="3D Terrain and Topography Models"></div><div class="card-content"><h3>3D Terrain &amp; Topography Models</h3><p>High-resolution terrain, elevation, and topographic layers for planning, simulation, and analysis.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/realll.webp" alt="Street and Road Network Dataset"></div><div class="card-content"><h3>Street &amp; Road Network Dataset</h3><p>Road graphs with attributes, turn restrictions, and traffic-ready structure for routing accuracy.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/Visualization.webp" alt="Thematic and Analytical Visualization"></div><div class="card-content"><h3>Thematic &amp; Analytical Visualization</h3><p>Heatmaps, choropleths, clusters, and layered visual analytics for operational decision-making.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/spatian.webp" alt="Remote Sensing Imagery Layers"></div><div class="card-content"><h3>Remote Sensing Imagery Layers</h3><p>Satellite and aerial imagery integration for change detection, land monitoring, and terrain context.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/Intelligence.webp" alt="Sensor and Field Data Ingestion"></div><div class="card-content"><h3>Sensor &amp; Field Data Ingestion</h3><p>Ingest IoT, GPS, and field telemetry streams into map layers for real-time monitoring workflows.</p></div></div>
+        </div>
+        <div class="tab-panel-footer">
+          <a href="#our-capabilities" class="btn btn-secondary">View all capabilities</a>
+        </div>
+      </div>
+
+      <div id="routing-nav" class="tab-content">
+        <div class="services__container">
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/test1.webp" alt="Multi-modal Routing Engine"></div><div class="card-content"><h3>Multi-modal Routing Engine</h3><p>Drive, walk, and cycle routing with turn-by-turn guidance and route constraints.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/biz.webp" alt="Logistics and Dispatch Optimization"></div><div class="card-content"><h3>Logistics &amp; Dispatch Optimization</h3><p>Multi-stop route sequencing, ETA computation, and dispatch-ready planning for fleets.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="traffic.webp" alt="Traffic-aware Routing"></div><div class="card-content"><h3>Traffic-aware Smart Routing</h3><p>Dynamic rerouting with live traffic intelligence to improve trip reliability and timing.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/searchhhh.webp" alt="Address and Place Search"></div><div class="card-content"><h3>Address &amp; Place Search</h3><p>Autocomplete search across addresses, POIs, and local place datasets.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/sear.webp" alt="Reverse Geocoding"></div><div class="card-content"><h3>Reverse Geocoding</h3><p>Convert coordinates to structured addresses with locality and context metadata.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/multi.webp" alt="Tracking and Geofencing"></div><div class="card-content"><h3>Tracking &amp; Geofencing</h3><p>Live trip tracking and geofence events for fleet supervision and route compliance.</p></div></div>
+        </div>
+        <div class="tab-panel-footer">
+          <a href="#our-capabilities" class="btn btn-secondary">View all capabilities</a>
+        </div>
+      </div>
+
+      <div id="ai-spatial" class="tab-content">
+        <div class="services__container">
+          <div class="service__card animate is-featured"><div class="card-image"><img src="detect.webp" alt="AI Geospatial Analyst"></div><div class="card-content"><h3>AI Geospatial Analyst</h3><p>Automated insights, anomaly detection, and intelligent spatial analysis.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/comp.webp" alt="AI Map Reconstruction Engine"></div><div class="card-content"><h3>AI Map Reconstruction Engine</h3><p>Fix missing streets, detect inconsistencies, and enhance map completeness.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/Analytics.webp" alt="Spatial Prediction Models"></div><div class="card-content"><h3>Spatial Prediction Models</h3><p>Population, land-use, and risk modeling with machine learning algorithms.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="remotesense.webp" alt="Remote Sensing Analytics"></div><div class="card-content"><h3>Remote Sensing Analytics</h3><p>Image-based change detection and feature extraction for infrastructure, environment, and land monitoring.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="aidrive.webp" alt="AI Location Intelligence Dashboard"></div><div class="card-content"><h3>AI-driven Location Intelligence Dashboard</h3><p>Comprehensive dashboard with AI-powered insights and analytics.</p></div></div>
+        </div>
+        <div class="tab-panel-footer">
+          <a href="#our-capabilities" class="btn btn-secondary">View all capabilities</a>
+        </div>
+      </div>
+
+      <div id="developer-api" class="tab-content">
+        <div class="services__container">
+          <div class="service__card animate is-featured"><div class="card-image"><img src="unified.webp" alt="Unified Geospatial API Suite"></div><div class="card-content"><h3>Unified Geospatial API Suite</h3><p>One API surface for mapping, tiles, routing, search, and geocoding integrations.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="global.webp" alt="Global Geospatial Infrastructure"></div><div class="card-content"><h3>Global Geospatial Infrastructure Stack</h3><p>Scalable global infrastructure for worldwide geospatial services.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="high.webp" alt="High-availability Map Hosting"></div><div class="card-content"><h3>High-availability Map Hosting</h3><p>99.9% uptime map hosting with global CDN and redundancy.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/developer.webp" alt="SDK and Developer Tooling"></div><div class="card-content"><h3>SDK &amp; Developer Tooling</h3><p>Production SDKs, integration utilities, and documentation for fast enterprise implementation.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/secure.webp" alt="Security and Data Sovereignty"></div><div class="card-content"><h3>Security &amp; Data Sovereignty</h3><p>Encryption, access control, and deployment options for regulated and sovereign environments.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/Intelligence.webp" alt="Sensor and Event Stream Platform"></div><div class="card-content"><h3>Sensor &amp; Event Stream Platform</h3><p>Stream GPS, IoT, and external events into geospatial APIs and monitoring workflows.</p></div></div>
+        </div>
+        <div class="tab-panel-footer">
+          <a href="#our-capabilities" class="btn btn-secondary">View all capabilities</a>
+        </div>
+      </div>
+
+      <div id="consumer" class="tab-content">
+        <div class="services__container">
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/maps.webp" alt="Universal Map App"></div><div class="card-content"><h3>Universal Map App</h3><p>Cross-platform map app for search, routing, offline packs, and daily navigation workflows.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="assets/img/newq.webp" alt="City Explorer"></div><div class="card-content"><h3>City Explorer</h3><p>Interactive place discovery with POIs, curated routes, and local insight layers.</p></div></div>
+          <div class="service__card animate is-featured"><div class="card-image"><img src="postad.webp" alt="Address and Postal Intelligence"></div><div class="card-content"><h3>Address &amp; Postal Intelligence</h3><p>Structured address, postal, and geocoding products for commerce and public sector workflows.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/multi.webp" alt="Consumer and Fleet Tracking"></div><div class="card-content"><h3>Consumer &amp; Fleet Tracking</h3><p>Live movement tracking, trip playback, and safety visibility for personal and business mobility.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/biz.webp" alt="Delivery and Field Optimization"></div><div class="card-content"><h3>Delivery &amp; Field Optimization</h3><p>Dispatch planning, route execution, and field operations optimization at scale.</p></div></div>
+          <div class="service__card animate"><div class="card-image"><img src="assets/img/spatian.webp" alt="Agriculture and Land Monitoring"></div><div class="card-content"><h3>Agriculture &amp; Land Monitoring</h3><p>Topography and remote-sensing intelligence for crop health, land use, and terrain conditions.</p></div></div>
+        </div>
+        <div class="tab-panel-footer">
+          <a href="#our-capabilities" class="btn btn-secondary">View all capabilities</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlight-section" aria-labelledby="spotlight-title">
+      <div class="spotlight-inner">
+        <p class="spotlight-kicker">Platform Spotlight</p>
+        <h2 id="spotlight-title" class="spotlight-title">The Fastest, Most Flexible GIS Platform</h2>
+        <p class="spotlight-lead">
+          Goldits delivers real-time mapping, analytics, and secure offline routing with unmatched performance and control across cloud, edge, and air-gapped deployments.
+        </p>
+
+        <div class="spotlight-layout">
+          <article class="spotlight-hero-card">
+            <div class="spotlight-hero-copy">
+              <h3>Engineered for high-scale geospatial workloads</h3>
+              <p>From nationwide map delivery to mission-critical field routing, one unified stack powers rendering, search, routing, and analytics without platform lock-in.</p>
+
+              <ul class="spotlight-metrics">
+                <li><strong>Sub-second</strong><span>Map interactions</span></li>
+                <li><strong>Online + Offline</strong><span>Edge-ready deployment</span></li>
+                <li><strong>API-first</strong><span>Developer integrations</span></li>
+              </ul>
+
+              <div class="spotlight-actions">
+                <a href="#products-overview" class="btn btn-primary">Explore Products</a>
+                <a href="contact.html" class="btn btn-secondary">Talk to Team</a>
+              </div>
+            </div>
+            <div class="spotlight-hero-visual">
+              <img src="assets/img/maprend.webp" alt="Real-time GIS platform rendering" loading="lazy" decoding="async" />
+            </div>
+          </article>
+
+          <div class="spotlight-grid">
+            <article class="spotlight-card">
+              <h3>Real-Time Mapping</h3>
+              <p>High-fidelity rendering with dynamic layers, updates, and smooth multi-scale interaction.</p>
+            </article>
+            <article class="spotlight-card">
+              <h3>Topography &amp; Sensing</h3>
+              <p>Terrain models, remote imagery, and sensor streams combined for high-context geospatial operations.</p>
+            </article>
+            <article class="spotlight-card">
+              <h3>Routing Precision</h3>
+              <p>Multi-modal routing with live traffic, ETA, and optimized path generation.</p>
+            </article>
+            <article class="spotlight-card">
+              <h3>Tracking &amp; Operations</h3>
+              <p>Live telemetry, geofence events, and monitoring dashboards for dispatch and field control.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="research-section" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p>Insights, whitepapers, benchmarks, and architecture notes on Goldits' geospatial stack. First item will be published soon.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand"><img class="footer__brand-logo" src="gologo.webp" alt="Goldits logo" loading="lazy" decoding="async" /><p>GIS platform built for precision, speed, and control.</p></div>
+      <div class="footer__links"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="#core-geospatial-services">Services</a></li><li><a href="#products-overview">Products</a></li><li><a href="contact.html">Contact</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+      <div class="footer__info"><h3>Follow Us</h3><ul class="footer__socials"><li><a href="https://x.com">Twitter</a></li><li><a href="https://www.linkedin.com">LinkedIn</a></li><li><a href="https://github.com">GitHub</a></li></ul></div>
+      <div class="footer__newsletter">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form" action="https://formsubmit.co/apply.async@gmail.com" method="post" novalidate>
+          <input type="hidden" name="form_type" value="Newsletter Signup" />
+          <input type="hidden" name="_subject" value="Goldits Newsletter Signup" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <div class="newsletter-field">
+            <input id="newsletter-email" class="newsletter-input" type="email" name="email" placeholder="Enter your email address" autocomplete="email" required />
+          </div>
+          <button class="newsletter-button" type="submit" aria-label="Subscribe">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 12L21 3L16 21L11 13L2 12Z" fill="white"/>
+            </svg>
+          </button>
+        </form>
+        <p class="newsletter-legal">By signing up for our newsletter, you consent to our <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms</a>.</p>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2025 Goldits. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
