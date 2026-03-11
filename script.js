@@ -216,6 +216,55 @@
       };
 
       section.addEventListener("click", delegatedArrowNav, true);
+
+      // Keep arrows visible while Products Overview is on screen.
+      if ("IntersectionObserver" in window) {
+        const sectionObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              section.classList.toggle("is-in-view", entry.isIntersecting && entry.intersectionRatio > 0.08);
+            });
+          },
+          { threshold: [0, 0.08, 0.2, 0.5] }
+        );
+        sectionObserver.observe(section);
+      } else {
+        section.classList.add("is-in-view");
+      }
+
+      // Mobile swipe between tabs (left/right) without relying on arrows.
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let touchActive = false;
+
+      section.addEventListener(
+        "touchstart",
+        (event) => {
+          if (!event.changedTouches || !event.changedTouches.length) return;
+          const touch = event.changedTouches[0];
+          touchStartX = touch.clientX;
+          touchStartY = touch.clientY;
+          touchActive = true;
+        },
+        { passive: true }
+      );
+
+      section.addEventListener(
+        "touchend",
+        (event) => {
+          if (!touchActive || !event.changedTouches || !event.changedTouches.length) return;
+          const touch = event.changedTouches[0];
+          const deltaX = touch.clientX - touchStartX;
+          const deltaY = touch.clientY - touchStartY;
+          touchActive = false;
+
+          const absX = Math.abs(deltaX);
+          const absY = Math.abs(deltaY);
+          if (absX < 48 || absX < absY * 1.25) return;
+          activateByOffset(deltaX < 0 ? 1 : -1);
+        },
+        { passive: true }
+      );
     }
 
     const activeTab = tabs.find((tab) => tab.classList.contains("active")) || tabs[0];

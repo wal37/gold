@@ -1008,15 +1008,21 @@ body {
 }
 
 .tab-arrows {
-  position: sticky;
-  top: 46vh;
+  position: fixed;
+  top: 50%;
   left: 0;
   right: 0;
   height: 0;
   margin-bottom: 0;
   overflow: visible;
   z-index: 2147483000;
-  pointer-events: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#products-overview.is-in-view .tab-arrows {
+  opacity: 1;
 }
 
 .tab-nav-arrow {
@@ -1194,7 +1200,7 @@ body {
 
 @media (max-width: 640px) {
   .tab-arrows {
-    top: 46vh;
+    top: 50%;
     z-index: 2147483000;
     height: 0;
     margin-bottom: 0;
@@ -3664,4 +3670,17 @@ main > section,
   border-color: rgba(212, 175, 55, 0.55) !important;
   background-color: rgba(212, 175, 55, 0.14) !important;
   box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.28) inset !important;
+}
+
+/* Mobile logo alignment correction */
+@media (max-width: 1024px) {
+  #navbar__logo img {
+    margin-left: -0.7rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #navbar__logo img {
+    margin-left: -0.2rem !important;
+  }
 }
