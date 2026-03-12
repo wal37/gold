@@ -3715,17 +3715,3 @@ main > section,
     order: 1;
   }
 }
-
-/* Black text lock for Core Geospatial + Platform & Ecosystem sections */
-#core-geospatial-services,
-#platform-ecosystem-services,
-#core-geospatial-services .section-title,
-#platform-ecosystem-services .section-title,
-#core-geospatial-services .topic-button,
-#platform-ecosystem-services .topic-button,
-#core-geospatial-services .subtopic-button,
-#platform-ecosystem-services .subtopic-button,
-#core-geospatial-services .core-detail li,
-#platform-ecosystem-services .core-detail li {
-  color: #000000 !important;
-}
